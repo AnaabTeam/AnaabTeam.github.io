@@ -1,0 +1,54 @@
+<mxfile host="app.diagrams.net" modified="2023-06-26T05:31:39.949Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" etag="MG-H8quwu1UnGvyjhsAm" version="21.5.0" type="github">
+  <diagram name="Page-1" id="koXy0I0tT3CvH9GFO2U0">
+    <mxGraphModel dx="3663" dy="1039" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="gpI4OJAfW3gToXWb0M4F-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="gpI4OJAfW3gToXWb0M4F-1" target="gpI4OJAfW3gToXWb0M4F-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gpI4OJAfW3gToXWb0M4F-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="gpI4OJAfW3gToXWb0M4F-1" target="gpI4OJAfW3gToXWb0M4F-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gpI4OJAfW3gToXWb0M4F-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.582;entryY=-0.033;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="gpI4OJAfW3gToXWb0M4F-1" target="gpI4OJAfW3gToXWb0M4F-14">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="440" y="210" />
+              <mxPoint x="440" y="428" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gpI4OJAfW3gToXWb0M4F-1" value="Mavproxy&lt;br&gt;&lt;br&gt;mavproxy.py --master=/dev/tty/USB[NUMBER]" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="150" width="370" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="gpI4OJAfW3gToXWb0M4F-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="gpI4OJAfW3gToXWb0M4F-4" target="gpI4OJAfW3gToXWb0M4F-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gpI4OJAfW3gToXWb0M4F-4" value="USB (dev/tty/USB[NUMBER])&lt;br&gt;Receiver should connect to Rader PC" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="318" y="20" width="215" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="gpI4OJAfW3gToXWb0M4F-8" value="--out(FlightNavigatorIP:14550)&lt;br&gt;&lt;br&gt;This port is for Flight Navigator" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-30" y="310" width="290" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="gpI4OJAfW3gToXWb0M4F-9" value="--out:(localhost:14551)&lt;br&gt;&lt;br&gt;Radar is always on localhost" style="rounded=1;whiteSpace=wrap;html=1;arcSize=20;" vertex="1" parent="1">
+          <mxGeometry x="600" y="290" width="200" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="gpI4OJAfW3gToXWb0M4F-17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="gpI4OJAfW3gToXWb0M4F-14" target="gpI4OJAfW3gToXWb0M4F-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gpI4OJAfW3gToXWb0M4F-19" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="gpI4OJAfW3gToXWb0M4F-14" target="gpI4OJAfW3gToXWb0M4F-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gpI4OJAfW3gToXWb0M4F-14" value="--out(udp:AttackerIP:14552)&lt;br&gt;&lt;br&gt;The attacker drone PC, and radar should be on the same network." style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="250" y="450" width="330" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="gpI4OJAfW3gToXWb0M4F-16" value="--out(udp:AttackerIP:14553)" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="-220" y="460" width="285" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="gpI4OJAfW3gToXWb0M4F-18" value="--out(udp:AttackerIP:14554)" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="765" y="460" width="245" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
